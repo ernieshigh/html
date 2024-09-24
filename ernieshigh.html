@@ -39,7 +39,15 @@
         <section class="main-content">
             <h2> A plain HTML page with no JavaScript</h2>
             <article>
-                <p>This page is 100% HTML/CSS, it does not use any JavaScript or 3rd party frameorks.</p>
+                <p>These pages are 100% HTML/CSS and do not use JavaScript or 3rd party frameworks. They use <a
+                        href="https://validator.w3.org/" target="_blank" title="W3C HTML Validator"> valid,
+                        semantic</a>, HTML. They also
+                    use valid CSS however, the <a href="https://jigsaw.w3.org/css-validator/" target="_blank"
+                        title="W3C CSS Validator"> CSS
+                        Validator</a> does not recognize some newer CSS selectors and properties. I use nesting and
+                    other selectors to keep
+                    the code to a minimum and make it easier to read.
+                </p>
                 <figure>
                     <picture class="left-shape">
                         <source srcset="image/shape-right.png">
@@ -74,20 +82,34 @@
                     Without HTML/CSS the web would be pretty empty.
                 </p>
                 <h3>A little History</h3>
-                <p>HTML could be considered the original defined mark-up language implemented for the web. It was
-                    invented by Tim Bernner-Lee in 1989, the first html page<a
-                        href="https://info.cern.ch/hypertext/WWW/TheProject.html" target="_blank" title-"First HTML
-                        page">in HTML was done in 1991.</a> There are several other mark-up and other languages used on
-                    the internet but HTML is the main language used for dispalying webpages. </p>
+                <p>HTML could be considered the original defined markup language implemented for the web. It was
+                    invented by Tim
+                    Bernner-Lee in 1989, the first HTML page<a href="https://info.cern.ch/hypertext/WWW/TheProject.html"
+                        target="_blank" title="First HTML page">in HTML was done in 1991.</a> There are several other
+                    markup and other languages used on the
+                    internet but HTML is the main language used for displaying webpages.
+                </p>
             </article>
             <article class="stars">
-                <div id='stars'></div>
-                <div id='stars2'></div>
-                <div id='stars3'></div>
-                <div id='title'></div>
+                <h3>A CSS Animation</h3>
+                <p>Many websites these days use animation to help attract readers and keep them entertained so they stay
+                    on the page
+                    longer. Let’s face it the average person today has a very short attention span, the average time on
+                    a website is under a
+                    minute, so more bells and whistles keep the user on the page longer.
+                    While JavaScript does have a place in creating interactive things to keep the user amused. Many of
+                    these gimmicks can be
+                    done using simple HTML and CSS, such as the animation below.
+                </p>
+                <div id="banner-refresh" class="banner-wrap">
+                    <div class="banner_image_over"> </div>
+                    <div class="banner_hero">
+                        <h2 class="banner-head" style="margin:25px">CSS Animated Background</h2>
 
-                <span><a href="https://codepen.io/sarazond/pen/LYGbwj" target="_blank"
-                        title="A Codepen by Sarazond">Borrowed from Parallax Star background in CSS sarazond</a></span>
+                    </div>
+                </div>
+
+
             </article>
         </section>
         <aside></aside>
@@ -96,9 +118,9 @@
         <h2> More Stuff</h2>
     </section>
     <footer>
-        <section class="footer-content">
+        <div class="footer-content">
             <p class="copyrite">HTML by Ernie &copy; 2024</p>
-        </section>
+        </div>
     </footer>
 
 </body>
