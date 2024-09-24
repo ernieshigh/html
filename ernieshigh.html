@@ -9,6 +9,8 @@
 
     <link rel="icon" type="image/x-icon" href="./image/Ernies-High-fav.png">
 
+    <link rel="preload" as="image" href="image/eh-html-head.webp">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -36,13 +38,14 @@
     <main>
         <section class="main-content">
             <h2> A plain HTML page with no JavaScript</h2>
-            <figure>
-                <picture class="left-shape">
-                    <source srcset="image/shape-right.png">
-                    <img src="image/shape-right.png" alt="shape">
-                </picture>
-            </figure>
             <article>
+                <p>This page is 100% HTML/CSS, it does not use any JavaScript or 3rd party frameorks.</p>
+                <figure>
+                    <picture class="left-shape">
+                        <source srcset="image/shape-right.png">
+                        <img src="image/shape-right.png" alt="shape">
+                    </picture>
+                </figure>
                 <h3 class="m5">Back to basics</h3>
                 <p>A simple, semantic, HTML site. For those of you that believe in the <a
                         href="https://www.interaction-design.org/literature/topics/keep-it-simple-stupid#:~:text=To%20apply%20the%20KISS%20(Keep,and%20clarity%20in%20decision%2Dmaking."
@@ -70,17 +73,33 @@
                     in today's websites.
                     Without HTML/CSS the web would be pretty empty.
                 </p>
+                <h3>A little History</h3>
+                <p>HTML could be considered the original defined mark-up language implemented for the web. It was
+                    invented by Tim Bernner-Lee in 1989, the first html page<a
+                        href="https://info.cern.ch/hypertext/WWW/TheProject.html" target="_blank" title-"First HTML
+                        page">in HTML was done in 1991.</a> There are several other mark-up and other languages used on
+                    the internet but HTML is the main language used for dispalying webpages. </p>
+            </article>
+            <article class="stars">
+                <div id='stars'></div>
+                <div id='stars2'></div>
+                <div id='stars3'></div>
+                <div id='title'></div>
+
+                <span><a href="https://codepen.io/sarazond/pen/LYGbwj" target="_blank"
+                        title="A Codepen by Sarazond">Borrowed from Parallax Star background in CSS sarazond</a></span>
             </article>
         </section>
-        <aside>
-            <h3>Other stuff</h3>
-        </aside>
-
+        <aside></aside>
     </main>
     <section class="bottom-content">
         <h2> More Stuff</h2>
     </section>
-    <footer></footer>
+    <footer>
+        <section class="footer-content">
+            <p class="copyrite">HTML by Ernie &copy; 2024</p>
+        </section>
+    </footer>
 
 </body>
 
