@@ -231,9 +231,29 @@ main
 .bottom-content
 {
     width: 100%;
-    max-width: 1280px;
-    padding: 1rem;
     margin: 1rem auto;
+    & h2
+    {
+        margin: 0 auto;
+        max-width: 1280px
+    }
+}
+
+.container-row
+{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: .25rem;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 1rem;
+
+}
+
+.grid-box
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
 
 /** content **/
@@ -331,6 +351,144 @@ h2.banner-head
     {
         transform: translateY(0%);
     }
+}
+
+/** form **/
+.form-wrap
+{
+    position: relative;
+    background-image: url(../image/pic113.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    max-width: 480px;
+    min-height: 640px;
+    padding: 0;
+    margin: 2em auto;
+}
+
+form
+{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    top: 0;
+    left: 0;
+    padding: 50px 70px 50px 70px;
+    background-color: rgba(159, 219, 116, 0.7);
+
+    & h3
+    {
+        color: #396aa1;
+        text-align: center;
+    }
+    h4
+    {
+        margin-top: 2em;
+        margin-bottom: 0;
+        color: #396aa1;
+    }
+
+    textarea,
+    select,
+    input
+    {
+        background-color: rgba(200, 200, 200, .7);
+        padding: 12px 16px;
+        margin: .5em auto;
+        font-size: .85rem;
+        border-radius: 16px;
+    }
+
+    input[type="checkbox"]
+    {
+        position: relative;
+        display: grid;
+        width: 22px;
+        height: 22px;
+        padding: .5em;
+        grid-template-columns: 1em auto;
+        gap: 0.5em;
+        border: 1px solid #396aa1;
+        border-radius: 0;
+
+    }
+    input[type="radio"]
+    {
+        position: absolute;
+        display: inline-block;
+        top: 22px;
+        left: 12px;
+        width: 22px;
+        height: 22px;
+        padding: 0;
+        border-radius: 50%;
+    }
+
+    label
+    {
+        position: relative;
+        display: inline-block;
+        width: 50px;
+        margin: .3em;
+        color: #396aa1;
+        text-align: center
+    }
+
+    .check
+    {
+        width: auto
+    }
+
+    ::placeholder,
+    select
+    {
+        color: rgba(57, 106, 161, .9);
+        appearance: auto;
+    }
+
+    input[type="text"]:focus,
+    input[type="email"]:focus,
+    input[type="tel"]:focus,
+    textarea:focus,
+    select:focus
+    {
+        background-color: #D4E4F7;
+        outline: 1px solid rgba(57, 106, 161, .9);
+        border: 1px solid #66B032;
+
+    }
+
+    input[type="radio"]:checked
+    {
+        background-color: #66B032;
+        border: 5px solid #D4E4F7;
+        box-shadow: 0 0 0 2px #396aa1;
+    }
+
+    input[type="checkbox"]:focus:after,
+    input[type="checkbox"]:checked:after
+    {
+        content: "\2713";
+        background-color: transparent;
+        position: absolute;
+        top: -18px;
+        width: 5px;
+        height: 5px;
+        color: #396aa1;
+        font-size: 32px;
+        font-weight: 800;
+    }
+
+
+}
+
+
+/** bottom content **/
+.more-content
+{
+    padding: 1em;
+    border: thin solid #D4E4F7;
 }
 
 
