@@ -50,17 +50,11 @@ select
     line-height: inherit;
     color: inherit;
 }
-
-input,
-button,
-textarea,
-select
-{
-    font: inherit;
-    line-height: inherit;
-    color: inherit;
+ 
+ figcaption {
+    font-size: 12px;
+    padding: .3em 0;
 }
-
 table
 {
     border-collapse: collapse;
@@ -221,17 +215,18 @@ main
     width: 100%;
     max-width: 1280px;
     min-height: calc(100vh - 420px);
-    padding: 1rem;
+    padding: 1em 0;
     margin: 1em auto;
     display: grid;
-    grid-template-columns: 3fr 1fr;
-    gap: 1rem;
+    grid-template-columns: 3fr 1fr; 
+	gap: 1.5rem;
 }
 
 .bottom-content
 {
     width: 100%;
-    margin: 1rem auto;
+    margin: 1em auto;
+	padding: 1em;
     & h2
     {
         margin: 0 auto;
@@ -258,10 +253,12 @@ main
 
 /** content **/
 
+
+
 article
 {
     margin: 1rem auto;
-    padding: 1rem;
+    padding: 1em 0;
 }
 
 h3
@@ -351,6 +348,28 @@ h2.banner-head
     {
         transform: translateY(0%);
     }
+}
+
+/** sidebar **/
+
+aside {
+	height: fit-content;
+    padding: 1em; 
+    border: thin solid #375F1B;
+	border-radius: .5em;
+	
+	& h2{
+		margin-top: 0;
+	}
+}
+
+.side-article {
+    padding-top: 0;
+    margin-top: 0;
+	padding-top: 1em;
+	margin-top: 1em;
+    font-size: 14px;
+    border-bottom: thin solid #375F1B;
 }
 
 /** form **/
@@ -526,7 +545,7 @@ footer
 
 /** Going Mobile **/
 
-@media (max-width: 520px)
+@media (max-width: 820px)
 {
     h1
     {
@@ -544,8 +563,11 @@ footer
         background-position: top center;
         background-size: cover
     }
-    main
+	
+	.container-row,
+	main
     {
         grid-template-columns: 1fr;
+		padding: 1em;
     }
 }
