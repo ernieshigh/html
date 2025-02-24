@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+
+    <title>Ernies High - A static HTML page</title>
+
+    <link rel="icon" type="image/x-icon" href="./image/Ernies-High-fav.png">
+
+    <link rel="preload" as="image" href="image/eh-html-head.webp">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&display=swap"
+        rel="prefetch">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul class="logo-link">
+                <li><a href="https://ernieshigh.dev" title="Ernies High"><img src="./image/Ernies-High.webp"
+                            alt="Erniesh High Static HTML" width="75" height="75"></a></li>
+            </ul>
+            <ul>
+                <li><a href="https://ernieshigh.dev/about-ernies-high/" title="About Ernie"> About Ernie</a></li>
+                <li><a href="https://ernieshigh.dev/random-stuff/" title="Blog Grid on WordPress">Random</a></li>
+                <li><a href="https://ernieshigh.dev/sample/" title="Sample work"> Sample</a></li>
+            </ul>
+        </nav>
+        <h1> Ernies High - Static HTML</h1>
+        <h2> An example of semantic HTML</h2>
+    </header>
+    <main>
+        <section class="main-content">
+            <h2> A plain HTML page with no JavaScript</h2>
+            <article>
+                <p>These pages are 100% HTML/CSS and do not use JavaScript or 3rd party frameworks. They use <a
+                        href="https://validator.w3.org/" target="_blank" title="W3C HTML Validator"> valid,
+                        semantic</a>, HTML. They also
+                    use valid CSS however, the <a href="https://jigsaw.w3.org/css-validator/" target="_blank"
+                        title="W3C CSS Validator"> CSS
+                        Validator</a> does not recognize some newer CSS selectors and properties. I use nesting and
+                    other selectors to keep
+                    the code to a minimum and make it easier to read.
+                </p>
+                <figure>
+                    <picture class="left-shape">
+                        <source srcset="image/shape-right.png">
+                        <img src="image/shape-right.png" alt="shape">
+                    </picture>
+                </figure>
+                <h3 class="m5">Back to basics</h3>
+                <p>A simple, semantic, HTML site. For those of you that believe in the <a
+                        href="https://www.interaction-design.org/literature/topics/keep-it-simple-stupid#:~:text=To%20apply%20the%20KISS%20(Keep,and%20clarity%20in%20decision%2Dmaking."
+                        target="_blank" title="Keep it simple stupid">KISS</a> method, this is the simplest, cleanest
+                    method of creating website. No bulky frameworks, no large JavaScript libraries or scripts, just
+                    plain HTML and CSS.
+                </p>
+
+                <figure>
+                    <picture class="right-shape">
+                        <source srcset="image/shape.png">
+                        <img src="image/shape.png" alt="shape">
+                    </picture>
+                </figure>
+                <h3>So what, HTML that is so old school</h3>
+                <p>True, most of the web today is built on CMS apps platforms like <a
+                        href="https://stage.ernieshigh.dev/" target="_blank"
+                        title="A custom WordPress theme">WordPress</a> or app made using <a
+                        href="https://ernieshigh.dev/coffee/" target="_blank" title="Pure JavaScript App">
+                        JavaScript</a>. But the god-awful truth is that all of these things
+                    that make our life easier in creating beautiful web pages do it by writing HTML & CSS. It would be
+                    hard to find a website or page not made of HTML and styled with CSS, regardless of how the site was
+                    built. While
+                    CMSs like WordPress and JavaScript libraries like jQuery, React, NextJS, etc. do have a valid place
+                    in today's websites.
+                    Without HTML/CSS the web would be pretty empty.
+                </p>
+                <h3>A little History</h3>
+                <p>HTML could be considered the original defined markup language implemented for the web. It was
+                    invented by Tim
+                    Bernner-Lee in 1989, the first HTML page<a href="https://info.cern.ch/hypertext/WWW/TheProject.html"
+                        target="_blank" title="First HTML page">in HTML was done in 1991.</a> There are several other
+                    markup and other languages used on the
+                    internet but HTML is the main language used for displaying webpages.
+                </p>
+            </article>
+            <article class="stars">
+                <h3>A CSS Animation</h3>
+                <p>Many websites these days use animation to help attract readers and keep them entertained so they stay
+                    on the page
+                    longer. Let’s face it the average person today has a very short attention span, the average time on
+                    a website is under a
+                    minute, so more bells and whistles keep the user on the page longer.
+                    While JavaScript does have a place in creating interactive things to keep the user amused. Many of
+                    these gimmicks can be
+                    done using simple HTML and CSS, such as the animation below.
+                </p>
+                <div id="banner-refresh" class="banner-wrap">
+                    <div class="banner_image_over"> </div>
+                    <div class="banner_hero">
+                        <h2 class="banner-head" style="margin:25px">CSS Animated Background</h2>
+
+                    </div>
+                </div>
+
+
+            </article>
+        </section>
+        <aside>
+			<h2 class="center-text"> A sidebar?</h2>
+			
+			<article class="side-article">
+				<p>
+					I dont see many of these, these days but they used to be very popular almost required.
+				</p>
+			</article>
+			
+			<figure class="side-article">
+			 <picture>
+                        <source srcset="https://ernieshigh.dev/wp-content/uploads/2024/02/peter-mizsak-desert-road.jpg">
+                        <img src="https://ernieshigh.dev/wp-content/uploads/2024/02/peter-mizsak-desert-road.jpg" alt="A long road">
+                    </picture>
+					
+				<figcaption><a href="https://unsplash.com/photos/highway-in-desert-oAYBm7nuIWY" target="_blank">Image by Peter Mizsak</a></figcaption>
+			</figure>
+		</aside>
+    </main>
+    <section class="bottom-content">
+        <h2> More Stuff</h2>
+        <div class="container-row">
+            <article class="more-content">
+                <a href="contact.html" title="HTML Form">
+                    <h3>HTML Form</h3>
+                    <picture>
+                        <source srcset="image/html-form.webp">
+                        <img src="image/html-form.webp" alt="Example of an HTML form" width="200" height="366">
+                    </picture>
+                </a>
+            </article>
+        </div>
+
+    </section>
+    <footer>
+        <div class="footer-content">
+            <p class="copyrite">HTML by Ernie &copy; 2024</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
