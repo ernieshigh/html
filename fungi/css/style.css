@@ -309,8 +309,7 @@
     font-size: var(--card-title-fs, var(--font-size-heading-sm));
   }
 
-  .button,
-  button {
+  .button {
     background-color: var(--background-accent);
     display: inline-flex;
     padding: 0.5rem 1rem;
@@ -322,9 +321,7 @@
   }
 
   .button:hover,
-  button:hover,
-  .button:focus-visible,
-  button:focus-visible {
+  .button:focus-visible {
     background-color: var(--background-accent-light);
     color: var(--text-high-contrast);
   }
