@@ -305,7 +305,6 @@
         margin-block-start: 1.5rem;
         padding-block-start: 1.5rem;
         border-top: 2px solid var(--background-accent-light);
-
         border-bottom-left-radius: var(--border-radius-3);
       }
     }
@@ -313,7 +312,6 @@
 
   [aria-controls="main-nav"] {
     display: none;
-    color: red;
   }
 
   @media (width < 767px) {
