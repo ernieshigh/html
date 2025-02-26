@@ -313,6 +313,7 @@
 
   [aria-controls="main-nav"] {
     display: none;
+    color: red;
   }
 
   @media (width < 767px) {
