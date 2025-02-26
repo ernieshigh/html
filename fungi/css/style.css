@@ -269,7 +269,7 @@
   [aria-controls="main-nav"] {
     background: transparent;
     border: 0;
-    z-index: 99;
+    z-index: 100;
   }
   .main-nav {
     ul {
