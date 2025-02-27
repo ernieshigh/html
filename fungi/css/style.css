@@ -268,6 +268,7 @@
 
   .skip-nav:focus {
     position: absolute;
+    padding: 0.5rem;
   }
   .main-head {
     padding-block: 1rem;
