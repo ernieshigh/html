@@ -13,6 +13,7 @@
     rel="stylesheet" />
   <link rel="stylesheet" href="css/style.css" />
   <script src="main.js" defer></script>
+  <script src="filter.js" defer></script>
 </head>
 
 <body>
@@ -76,14 +77,13 @@
 
         <div class="flex-group">
           <select id="season" name="season">
-            <option value="season-all">Season All</option>
+            <option value="all">Season All</option>
             <option value="summer">Summer</option>
             <option value="fall">Fall</option>
-            <option value="winter">Winter</option>
             <option value="spring">Spring</option>
           </select>
-          <select>
-            <option value="type-all">Type All</option>
+          <select id="edible" name="edible">
+            <option value="all">Type All</option>
             <option value="edible">Edible</option>
             <option value="toxic">Toxic</option>
           </select>
@@ -199,7 +199,7 @@
           <div class="card">
             <h3 class="card-title">Shaggy Mane</h3>
             <ul class="cat-list" role="list" aria-label="Mushroom characteristics">
-              <li data-edible=edible"> <span class=" visually-hidden">This mushroom is edible</span>edible</li>
+              <li data-edible="edible"> <span class=" visually-hidden">This mushroom is edible</span>edible</li>
               <li data-season="fall"> <span class="visually-hidden">This mushroom is best in fall time</span>fall</li>
             </ul>
             <p>Tall white mushroom with shaggy scales</p>
@@ -211,7 +211,7 @@
           <div class="card">
             <h3 class="card-title">Maitake</h3>
             <ul class="cat-list" role="list" aria-label="Mushroom characteristics">
-              <li data-edible=edible"> <span class=" visually-hidden">This mushroom is edible</span>edible</li>
+              <li data-edible="edible"> <span class=" visually-hidden">This mushroom is edible</span>edible</li>
               <li data-season="fall"> <span class="visually-hidden">This mushroom is best in fall time</span>fall</li>
             </ul>
             <p>Large, feathery clusters with overlapping gray-brown caps</p>
@@ -223,7 +223,7 @@
           <div class="card">
             <h3 class="card-title">False Morel</h3>
             <ul class="cat-list" role="list" aria-label="Mushroom characteristics">
-              <li data-edible=toxic"> <span class=" visually-hidden">This mushroom is toxic</span>toxic</li>
+              <li data-edible="toxic"> <span class=" visually-hidden">This mushroom is toxic</span>toxic</li>
               <li data-season="spring"> <span class="visually-hidden">This mushroom is best in spring time</span>spring
               </li>
             </ul>
@@ -237,16 +237,20 @@
             <h3 class="card-title">Matsutake</h3>
             <ul class="cat-list" role="list" aria-label="Mushroom characteristics">
               <li data-edible="edible"> <span class=" visually-hidden">This mushroom is edible</span>edible</li>
-              <li data-season="fsll"> <span class="visually-hidden">This mushroom is best in fall time</span>fall</li>
+              <li data-season="fall"> <span class="visually-hidden">This mushroom is best in fall time</span>fall</li>
             </ul>
             <p>White to brown cap with thick stem and distinct spicy aroma</p>
             <div class="card-note">
               <p><strong>Important Notice:</strong>: erify identification - has toxic look-alikes</p>
             </div>
           </div>
-
         </div>
+        <div class="no-message" hidden>
+          No mushrooms match your selection
+        </div>
+      </div>
     </section> <!-- guide -->
+
     <section id="faq" class="section  flow bg-extra-dark" data-width="wide">
       <h2 class="section-heading text-center ">FAQ</h2>
       <div class="content bento">
@@ -306,6 +310,7 @@
             different varieties, so year-round foraging is possible.
           </p>
         </div>
+
       </div>
     </section><!-- faq -->
   </main>
